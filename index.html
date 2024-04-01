@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Ajinam Herbal Soap</title>
+    <link rel="icon" type="image/png" href="assets/img/logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuLinks = document.querySelectorAll('.menu__link');
+        
+            menuLinks.forEach(function(menuLink) {
+                menuLink.addEventListener('click', function(event) {
+                    event.preventDefault(); // Prevent default behavior of anchor link
+                    
+                    const targetId = this.getAttribute('href'); // Get the href attribute value
+                    
+                    if (targetId === '#footer-contact') {
+                        // Scroll to the bottom of the page
+                        const footerContact = document.getElementById('footerview');
+                        if (footerContact) {
+                            footerContact.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    } else {
+                        const targetSection = document.querySelector(targetId); // Find the target section
+                        
+                        if (targetSection) {
+                            // Calculate the offset of the target section
+                            const offsetTop = targetSection.offsetTop;
+                            
+                            // Scroll to the target section with smooth behavior
+                            window.scrollTo({
+                                top: offsetTop,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                });
+            });
+        });
+        
+    
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="header__nav w-120" >
+                <div class="header__logo">
+                    <img src="assets\img\logo-removebg.png" alt="Logo">
+                    <span class="header__logo-text">Ajinam Herbal Soap</span>
+                </div>
+                <div class="header__nav__content">
+                    <div class="nav-close-icon"></div>
+                    <ul class="header__menu">
+                        <li class="menu__item">
+                            
+                            <a href="#" class="menu__link active">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#footer-contact" class="menu__link">Contact</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+
+                <div class="hamburger-menu-wrap">
+                    <div class="hamburger-menu">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="hero w-120">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <h1 class="hero__title">Nourish Your Skin Naturally</h1>
+                    <p class="hero__description">
+                    Handmade soaps with botanical goodness for gentle cleansing, nourishment, and natural radiance. Experience pure skincare indulgence in every bar.
+                    </p>
+                    <a href="coming soon\startbootstrap-coming-soon-gh-pages\comingsoon.html" class="btn btn__hero">Shop Now</a>
+                </div>
+                <div class="hero__img">
+                    <img src="assets/img/hero.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="opportunities">
+            <div class="opportunities__img">
+                <img src="assets/img/leaf.png" alt="" style="width: 200px; height: 500px; position: absolute; left:0; top: 0;">
+            </div>
+            <div class="opportunities__content w-105">
+                <div class="opportunities__head">
+                    <h2 class="opportunities__title">Our Moto.</h2>
+                    <p class="opportunities__description">"What sets us apart is the careful craftsmanship and the natural goodness that is infused into each bar of Ajinam Herbal Soap. Because each soap is meticulously created by hand, it has a unique blend of herbs that are designed to refresh and nourish your skin. Our products provide an amazing skincare experience, leaving you feeling naturally renewed and radiant. We are committed to purity and sustainability."</p>
+                </div>
+                <div class="opportunities__body">
+                    <div class="opportunity">
+                        <img src="assets/img/opportunites/opportunity-1.svg" alt="Icon" class="opportunity__icon">
+                        <h4 class="opportunity__title">Handcrafted Excellence</h4>
+                        <p class="opportunity__description"> Each bar of Ajinam Herbal Soap is meticulously handcrafted with precision and care, ensuring superior quality and attention to detail in every batch
+                        </p>
+                    </div>
+
+                    <div class="opportunity active">
+                        <img src="assets/img/opportunites/opportunity-2.svg" alt="Icon" class="opportunity__icon">
+                        <h4 class="opportunity__title">Natural Formulations</h4>
+                        <p class="opportunity__description">
+                            Our soaps are formulated using a unique blend of natural botanical extracts, essential oils, and moisturizers, carefully selected for their beneficial properties. Free from harsh chemicals and artificial additives, our products offer gentle yet effective skincare solutions.
+                        </p>
+                    </div>
+                    <div class="opportunity">
+                        <img src="assets/img/opportunites/opportunity-3.svg" alt="Icon" class="opportunity__icon">
+                        <h4 class="opportunity__title">Commitment to Sustainability
+                        </h4>
+                        <p class="opportunity__description">
+                            We prioritize sustainability throughout our production process, from responsibly sourcing ingredients to eco-conscious packaging choices. By minimizing our environmental footprint, we strive to create a positive impact on both your skin and the planet
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="invest  w-105">
+            <div class="invest__content">
+                <div class="invest__head">
+                    <h2 class="invest__title">About Soaps</h2>
+                    <p class="invest__description">Discover luxurious skincare with Ajinam Herbal Soap's natural, handcrafted excellence.</p>
+                </div>
+                <div class="invest__body">
+                    <div class="invest__item">
+                        <div class="invest__item__head">
+                            <h5 class="invest__item__subtitle">Lemongrass Soap</h5>
+                        </div>
+                        <div class="invest__item__body">
+                            <h4 class="invest__item__title"></h4>
+                            <p class="invest__item_description">
+                                It helps to open pores while the astringent properties of rosemary unclog them. Great for balancing oilier skin. A little lemongrass herbadds some texture
+                                to this wonderfully refreshing soap.
+                            </p>
+                        </div>
+                        <div class="invest__item__footer">
+                            <a href="coming soon\startbootstrap-coming-soon-gh-pages\comingsoon.html" class="btn btn__invest">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="invest__item">
+                        <div class="invest__item__head">
+                            <h5 class="invest__item__subtitle">Sandalwood Soap</h5>
+                        </div>
+                        <div class="invest__item__body">
+                            <h4 class="invest__item__title">Best Seller
+                            </h4>
+                            <p class="invest__item_description">
+                                It has a great aroma that helps in destressing the mind body and soul. The mind body and soul. This nourishing soap gives you a luxurious bathing experience. It helps in treating acne, moisturizes dry skin, slows the aging process   
+                            </p>
+                        </div>
+                        <div class="invest__item__footer">
+                            <a href="coming soon\startbootstrap-coming-soon-gh-pages\comingsoon.html" class="btn btn__invest">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-is-works w-120">
+            <div class="works__content">
+                <div class="works__head">
+                    <h2 class="works__title">Perks of our soap</h2>
+                    <p class="works__description">
+                        Ajinam soaps offer a rejuvenating bathing experience, harnessing the power of natural ingredients. They destress the mind, body, and soul with a delightful aroma while nourishing the skin. Effective against acne, they moisturize dry skin and slow down the aging process, ensuring a refreshing and invigorating cleansing routine.
+                    </p>
+                </div>
+                <div class="works__body">
+                    <ul class="form_progressbar">
+                        <li class="progressbar__step active" data-step="1">01</li>
+                        <li class="progressbar__step" data-step="2">02</li>
+                        <li class="progressbar__step" data-step="3">03</li>
+                        <li class="progressbar__step" data-step="4">04</li>
+                    </ul>
+                </div>
+                <div class="works__footer">
+                    <div class="works__step__content first_step"></h3>
+
+                        <h3 class="works__step_title">Handcrafted Herbal Ingredients </h3>
+                        <p class="works__step_description">
+                            Ajinam soaps are meticulously crafted with natural herbal ingredients, ensuring a pure and gentle cleansing experience without harsh chemicals.
+                        </p>
+                    </div>
+                    <div class="works__step__content">
+                        <h3 class="works__step_title">Tested for Effectiveness and Safety.</h3>
+                        <p class="works__step_description">
+                            Each soap undergoes rigorous testing to ensure both its effectiveness in skincare and its safety for use on all skin types.
+                        </p>
+                    </div>
+                    <div class="works__step__content">
+                        <h3 class="works__step_title">Destresses with Aroma</h3>
+                        <p class="works__step_description">
+                            Infused with a captivating aroma, Ajinam soaps provide a calming and destressing effect, rejuvenating the mind and body during every bath.
+                        </p>
+                    </div>
+                    <div class="works__step__content">
+                        <h3 class="works__step_title"> Nourishes, Fights Acne, Slows Aging</h3>
+                        <p class="works__step_description">
+                            These soaps not only cleanse but also nourish the skin, combat acne with their herbal properties, and contribute to slowing down the skin's aging process, promoting healthier and youthful-looking skin.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="testimonials">
+            <div class="testimonials__content">
+                <div class="testimonials__head w-105">
+                    <img src="assets/img/quote.svg" alt="Quote" class="testimonials__quote">
+                    <h2 class="testimonials__title">Product Reviews</h2>
+                </div>
+                <div class="testimonials__body">
+                    <div class="testimonials__list">
+                        <div class="testimonial">
+                            <div class="testimonial__profile">
+                                <div class="testimonial__img">
+                                    <img src="assets\img\testimonials\4.png" alt="Testimonial">
+                                </div>
+                                <div class="testimonial__info">
+                                    <h4 class="testimonial__name"> Atharva Deshmukh</h4>
+                                    <h4 class="testimonial__title">Student</h4>
+                                </div>
+                            </div>
+                            <p class="testimonial__description">
+                                “ Almond soap by Ajinam Herbal is a skincare essential! Its delicate fragrance and creamy lather provide a soothing bathing experience, leaving my skin feeling pampered and refreshed. I love how it locks in moisture, giving me silky smooth skin with every use. “
+                            </p>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial__profile">
+                                <div class="testimonial__img">
+                                    <img src="assets/img/testimonials/2.png" alt="Testimonial">
+                                </div>
+                                <div class="testimonial__info">
+                                    <h4 class="testimonial__name"> Ankit Kumar Tiwari</h4>
+                                    <h4 class="testimonial__title">Student</h4>
+                                </div>
+                            </div>
+                            <p class="testimonial__description">
+                                “ I recently tried the Ajinam Herbal Almond Soap, and I'm blown away by the refreshing fragrance! It leaves my skin feeling clean and revitalized, with a subtle Almond scent that lingers throughout the day. Plus, knowing it's handmade and herbal gives me peace of mind. Highly recommend “
+                            </p>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial__profile">
+                                <div class="testimonial__img">
+                                    <img src="assets/img/testimonials/3.png" alt="Testimonial">
+                                </div>
+                                <div class="testimonial__info">
+                                    <h4 class="testimonial__name"> Utkarsh Gaikwad</h4>
+                                    <h4 class="testimonial__title">Student</h4>
+                                </div>
+                            </div>
+                            <p class="testimonial__description">
+                                “ Ajinam Herbal Almond Soap is a luxurious treat for the skin! Its rich, nutty aroma envelops me in a comforting embrace, while the moisturizing formula leaves my skin feeling soft and nourished. A perfect choice for indulgent self-care routines.“
+                            </p>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial__profile">
+                                <div class="testimonial__img">
+                                    <img src="assets/img/testimonials/5.png" alt="Testimonial">
+                                </div>
+                                <div class="testimonial__info">
+                                    <h4 class="testimonial__name"> Shivam Sharma</h4>
+                                    <h4 class="testimonial__title">Student</h4>
+                                </div>
+                            </div>
+                            <p class="testimonial__description">
+                                “ Ajinam Herbal Lemongrass Soap is a refreshing delight! Its zesty scent instantly uplifts my mood, while the gentle exfoliating properties leave my skin feeling clean and invigorated. A must-have for anyone who loves a burst of citrus freshness in their shower routine. “
+                            </p>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial__profile">
+                                <div class="testimonial__img">
+                                    <img src="assets/img/testimonials/1.png" alt="Testimonial">
+                                </div>
+                                <div class="testimonial__info">
+                                    <h4 class="testimonial__name"> Aishwarya Chaudhary</h4>
+                                    <h4 class="testimonial__title">Student</h4>
+                                </div>
+                            </div>
+                            <p class="testimonial__description">
+                                “ Absolutely in love with Ajinam Herbal Sandalwood Soap! From the moment I opened the package, the delightful aroma swept me away. Using it was a luxurious experience, leaving my skin feeling incredibly soft and refreshed. I've noticed a significant improvement in my acne, and it's become an essential part of my skincare routine. Highly recommend! “
+                            </p>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial__profile">
+                                <div class="testimonial__img">
+                                    <img src="assets/img/testimonials/8.png" alt="Testimonial">
+                                </div>
+                                <div class="testimonial__info">
+                                    <h4 class="testimonial__name">Ruchita Chaudhary</h4>
+                                    <h4 class="testimonial__title">Student</h4>
+                                </div>
+                            </div>
+                            <p class="testimonial__description">
+                                “Ajinam Herbal Sandalwood Soap is my go-to for a spa-like experience at home. Its rich aroma relaxes the senses, while the gentle formula leaves my skin feeling refreshed and rejuvenated. Truly a treat for both body and mind.“
+                            </p>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial__profile">
+                                <div class="testimonial__img">
+                                    <img src="assets/img/testimonials/7.png" alt="Testimonial">
+                                </div>
+                                <div class="testimonial__info">
+                                    <h4 class="testimonial__name"> Sarvesh</h4>
+                                    <h4 class="testimonial__title">Student</h4>
+                                </div>
+                            </div>
+                            <p class="testimonial__description">
+                                “I'm obsessed with Ajinam Herbal Sandalwood Soap! Its natural ingredients work wonders on my skin, leaving it soft, supple, and beautifully scented. A daily indulgence that I can't live without. Highly recommend for anyone looking for premium skincare. “
+                            </p>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial__profile">
+                                <div class="testimonial__img">
+                                    <img src="assets/img/testimonials/6.png" alt="Testimonial">
+                                </div>
+                                <div class="testimonial__info">
+                                    <h4 class="testimonial__name"> Aryan Hanotia</h4>
+                                    <h4 class="testimonial__title">Student</h4>
+                                </div>
+                            </div>
+                            <p class="testimonial__description">
+                                “ Lemongrass soap by Ajinam Herbal is a game-changer! Its invigorating scent and gentle texture make every shower a rejuvenating experience. I love how it cleanses my skin without stripping away moisture, leaving it feeling refreshed and revitalized. Highly recommended for a daily dose of natural goodness. “
+                            </p>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial__profile">
+                                <div class="testimonial__img">
+                                    <img src="assets/img/testimonials/9.png" alt="Testimonial">
+                                </div>
+                                <div class="testimonial__info">
+                                    <h4 class="testimonial__name"> Kaveri Shelke</h4>
+                                    <h4 class="testimonial__title">Student</h4>
+                                </div>
+                            </div>
+                            <p class="testimonial__description">
+                                “ The Ajinam Herbal Sandalwood Soap is a skincare game-changer. Its creamy lather deeply moisturizes while the sandalwood scent soothes. My skin feels nourished, hydrated, and noticeably smoother. A must-have for anyone seeking luxurious, effective skincare. “
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__footer  w-105">
+                    <div class="testimonials__directions">
+                        <button class="btn__testimonials btn__testimonials__prev disable">
+                            <i class="fa fa-chevron-left"></i>
+                        </button>
+                        <button class="btn__testimonials btn__testimonials__next">
+                            <i class="fa fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="farm-invest w-105">
+            <h2 class="farm-invest__title">Elevate your <span> skincare routine</span> with the refreshing essence of nature's finest herbal soaps</h2>
+            <a href="coming soon\startbootstrap-coming-soon-gh-pages\comingsoon.html" class="btn btn__farm--invest">Buy Now</a>
+
+        </section>
+
+        <footer class="footer" id="footerview">
+            <div class="footer__body w-105">
+                <div class="footer__contact" style="text-align: center;">
+                    <h5 class="footer__contact__title">Mail</h5>
+                    <span>Write email to us</span>
+                    <a href="mailto:aparnameshram369@gmail.com" class="email">aparnameshram369@gmail.com</a>
+                    <a href="#" class="btn btn__signin">
+                        <i class="far fa-user"></i> Sign In
+                    </a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom__content width-105 px">
+                    <div class="footer__logos">
+                        <img src="assets\img\logo-removebg.png" alt="Logo">
+                    </div>  
+                        <p class="footer_copyright">
+                        © Copyright 2023. Ajinam Herbal Soap.
+                        </p>
+                    <img src="assets/img/mountain.png" alt="Mountain" class="footer_img">
+                </div>
+            </div>
+        </footer>
+        
+        
+    </div>
+    <script src="assets/js/main.js" type="module"></script>
+    <a href="https://wa.me/9604737714?text=Hi%20there%21%20I%20have%20some%20questions%20about%20your%20soap%20products.%20Can%20you%20help%20me%3F" " class="floating-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</body>
+
+</html>
